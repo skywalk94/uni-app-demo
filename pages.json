@@ -1,0 +1,15 @@
+{
+	"pages": [{
+		"path": "pages/index",
+		"style": {
+			"navigationBarTitleText": "明知山",
+			"enablePullDownRefresh": true
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "明知山",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
