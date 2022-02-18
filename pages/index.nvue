@@ -1,0 +1,36 @@
+<template>
+	<view class="box">
+		<u-button type="primary" text="跳转到详情" @click="goDetail"></u-button>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				title: 'Hello'
+			}
+		},
+		onLoad() {
+			uni.startPullDownRefresh()
+		},
+		onPullDownRefresh() {
+			setTimeout(() => {
+				uni.stopPullDownRefresh()
+			}, 1000)
+		},
+		methods: {
+			goDetail() {
+				uni.navigateTo({
+					url: './detail?id=1'
+				});
+			}
+		}
+	}
+</script>
+
+<style lang="scss" scoped>
+	.box {
+		padding: 30rpx;
+	}
+</style>
