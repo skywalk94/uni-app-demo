@@ -1,33 +1,30 @@
 <template>
 	<view class="box">
-		<view class="item" v-for="(item,index) in 20" :key="index">
-			<text class="item-text">列表{{index}}</text>
-		</view>
+		<text>详情页携带的id:{{id}}</text>
+		<pickers>省市区三级联动</pickers>
 	</view>
 </template>
 
 <script>
+	import pickers from "@/components/ming-picker/ming-picker.vue"
 	export default {
+		components: {
+			pickers
+		},
+		data() {
+			return {
+				id: ""
+			}
+		},
 		onLoad(option) {
-			console.log(option)
-		}
+			this.id = option.id
+		},
+		methods: {}
 	}
 </script>
 
 <style lang="scss" scoped>
 	.box {
 		padding: 30rpx;
-
-		.item {
-			height: 80rpx;
-			background-color: #f5f5f5;
-			margin-bottom: 30rpx;
-
-			&-text {
-				text-align: center;
-				line-height: 80rpx;
-				font-size: 24rpx;
-			}
-		}
 	}
 </style>

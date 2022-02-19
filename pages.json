@@ -11,12 +11,7 @@
 	}, {
 		"path": "pages/detail",
 		"style": {
-			"navigationBarTitleText": "详情",
-			"app-plus": {
-				"titleNView": {
-					"type": "transparent"
-				}
-			}
+			"navigationBarTitleText": "详情"
 		}
 	}, {
 		"path": "pages/mine",
@@ -24,9 +19,6 @@
 			"navigationBarTitleText": "个人中心"
 		}
 	}],
-	"easycom": {
-		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
-	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "明知山",

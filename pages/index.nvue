@@ -1,6 +1,8 @@
 <template>
 	<view class="box">
-		<u-button type="primary" text="跳转到详情" @click="goDetail"></u-button>
+		<button @click="goDetail" type="primary" >跳转到详情</button>
+		<switch disabled/>
+		<text>{{title}}</text>
 	</view>
 </template>
 
